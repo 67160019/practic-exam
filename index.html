@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator Web App</title>
+
+    <!-- เชื่อมไฟล์ CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <!-- Display -->
+      <div id="display">0</div>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <!-- Number Buttons -->
+        <button id="btn-7">7</button>
+        <button id="btn-8">8</button>
+        <button id="btn-9">9</button>
+
+        <button id="btn-4">4</button>
+        <button id="btn-5">5</button>
+        <button id="btn-6">6</button>
+
+        <button id="btn-1">1</button>
+        <button id="btn-2">2</button>
+        <button id="btn-3">3</button>
+
+        <button id="btn-0">0</button>
+        <button id="btn-decimal">.</button>
+
+        <!-- Operators -->
+        <button id="btn-add" class="operator">+</button>
+        <button id="btn-subtract" class="operator">-</button>
+        <button id="btn-multiply" class="operator">×</button>
+        <button id="btn-divide" class="operator">÷</button>
+
+        <!-- Controls -->
+        <button id="btn-clear" class="clear">AC</button>
+        <button id="btn-equals" class="equals">=</button>
+      </div>
+
+      <!-- History -->
+      <div class="history">
+        <h3>History</h3>
+        <div id="history-list"></div>
+      </div>
+    </div>
+
+    <!-- เชื่อมไฟล์ JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
