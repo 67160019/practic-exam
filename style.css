@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Calculator Layout */
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 260px;
+}
+
+/* Display */
+#display {
+  padding: 20px;
+  font-size: 32px;
+  text-align: right;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
+/* Buttons Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Button Colors */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Number buttons */
+button:not(.operator):not(.equals):not(.clear) {
+  background-color: #e0e0e0;
+}
+
+/* Operators */
+.operator {
+  background-color: #2196f3;
+  color: white;
+}
+
+/* Equals */
+.equals {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Clear */
+.clear {
+  background-color: #f44336;
+  color: white;
+}
+
+/* History */
+.history {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+#history-list p {
+  margin: 5px 0;
+  font-size: 14px;
+}
